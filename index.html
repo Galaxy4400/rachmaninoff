@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Стартовая сборка</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script>
+		const LOCALIZATION = 'Russian'; // English, Spanish... Ключ локализации. При необходимости изменять в соответствии с ответом сервера.
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container _container">
+				<div class="header__body">
+					<div class="header__column header__column_left">
+						<div class="socials">
+							<a class="socials__social _icon-vk" href="#"></a>
+							<a class="socials__social _icon-tg" href="#"></a>
+							<a class="socials__social _icon-yt" href="#"></a>
+						</div>
+					</div>
+					<div class="header__column header__column_center">
+						<div class="menu" data-menu="main-menu">
+							<nav class="menu__body" data-menu-container="main-menu" data-fix>
+								<ul class="menu__list">
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Главная</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">О конкурсе</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Новости</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Расписание</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Лауреаты и участники</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Жюри</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Оркестры и солисты</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Фотогалерея</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="header__column header__column_right">
+						<div class="languages">
+							<a class="languages__item _active" href="#">ru</a>
+							<a class="languages__item" href="#">en</a>
+						</div>
+						<a class="account" href="#">
+							<img src="assets/img/user.svg" alt="user">
+						</a>
+						<button class="menu-icon" type="button" data-menu-icon="main-menu"></button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+
+			<div class="main-head">
+				<div class="main-head__container _container">
+					<div class="main-head__body">
+						<a href="#" class="logo">
+							<img src="assets/img/logo.svg" alt="logo">
+						</a>
+						<div class="main-head__action">
+							<a class="main-head__btn btn" href="#">Архив трансляций</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="main-tabs">
+				<div class="main-tabs__container _container">
+					<div class="videos-tabs" data-tabs="videos">
+						<div class="videos-tabs__nav" data-tabs-controls>
+							<button class="videos-tabs__btn btn btn_w" type="button">Фортепиано</button>
+							<button class="videos-tabs__btn btn btn_w" type="button">Композиция</button>
+							<button class="videos-tabs__btn btn btn_w" type="button">дирижирование</button>
+						</div>
+						<div class="videos-tabs__content" data-tabs-container>
+							<div class="videos-tabs__panel">
+								<div class="_video">
+									<img src="assets/img/video-plug.jpg" alt="video">
+								</div>
+							</div>
+							<div class="videos-tabs__panel">Два контент</div>
+							<div class="videos-tabs__panel">Три контент</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="main-person">
+				<div class="main-person__container _container">
+					<div class="main-person__body">
+						<div class="main-person__column main-person__left">
+							<img class="main-person__photo" src="assets/img/persone.jpg" alt="persone">
+							<span class="main-person__label">Фотография представлена <a href="#">Российским национальным музеем музыки</a></span>
+						</div>
+						<div class="main-person__column main-person__right">
+							<h2 class="main-person__title">ФОРТЕПИАНО ДИРИЖИРОВАНИЕ КОМПОЗИЦИЯ</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="main-news">
+				<div class="main-news__container _container">
+					<div class="main-news__body">
+						<h3 class="main-news__title">Новости</h3>
+						<div class="main-news__wrapper">
+							<div class="main-news__slider news-slider" data-swiper>
+								<div class="news-slider__slides">
+									<a class="news-slider__slide news-slider-slide" href="#">
+										<div class="news-slider-slide__content">
+											<h5 class="news-slider-slide__title">Марафон «Мой Рахманинов» в ноябре прошел в трех федеральных округах</h5>
+											<figure class="news-slider-slide__image _ibg">
+												<img src="assets/img/n1.jpg" alt="image">
+											</figure>
+										</div>
+									</a>
+									<a class="news-slider__slide news-slider-slide" href="#">
+										<div class="news-slider-slide__content">
+											<h5 class="news-slider-slide__title">Марафон «Мой Рахманинов» в ноябре прошел в трех федеральных округах</h5>
+											<figure class="news-slider-slide__image _ibg">
+												<img src="assets/img/n1.jpg" alt="image">
+											</figure>
+										</div>
+									</a>
+									<a class="news-slider__slide news-slider-slide" href="#">
+										<div class="news-slider-slide__content">
+											<h5 class="news-slider-slide__title">Марафон «Мой Рахманинов» в ноябре прошел в трех федеральных округах</h5>
+											<figure class="news-slider-slide__image _ibg">
+												<img src="assets/img/n1.jpg" alt="image">
+											</figure>
+										</div>
+									</a>
+									<a class="news-slider__slide news-slider-slide" href="#">
+										<div class="news-slider-slide__content">
+											<h5 class="news-slider-slide__title">Марафон «Мой Рахманинов» в ноябре прошел в трех федеральных округах</h5>
+											<figure class="news-slider-slide__image _ibg">
+												<img src="assets/img/n1.jpg" alt="image">
+											</figure>
+										</div>
+									</a>
+									<a class="news-slider__slide news-slider-slide" href="#">
+										<div class="news-slider-slide__content">
+											<h5 class="news-slider-slide__title">Марафон «Мой Рахманинов» в ноябре прошел в трех федеральных округах</h5>
+											<figure class="news-slider-slide__image _ibg">
+												<img src="assets/img/n1.jpg" alt="image">
+											</figure>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="main-news__arrows">
+								<div class="main-news__arrow main-news__arrow_prev _icon-arrow"></div>
+								<div class="main-news__arrow main-news__arrow_next _icon-arrow"></div>
+							</div>
+						</div>
+						<a class="main-news__btn btn" href="#">Все новости</a>
+					</div>
+				</div>
+				<figure class="main-news__bg _ibg">
+					<img src="assets/img/nbg.jpg" alt="image">
+				</figure>
+			</div>
+
+			<div class="main-videos">
+				<div class="main-videos__container _container">
+					<div class="main-videos__body">
+						<h3 class="main-videos__title">Мой рахманинов</h3>
+						<div class="main-videos__wrapper">
+							<div class="main-videos__slider videos-slider" data-swiper>
+								<div class="videos-slider__slides">
+									<a class="videos-slider__slide videos-slider-slide" href="#">
+										<figure class="videos-slider-slide__image _ibg _video">
+											<img src="assets/img/v1.jpg" alt="image">
+										</figure>
+									</a>
+									<a class="videos-slider__slide videos-slider-slide" href="#">
+										<figure class="videos-slider-slide__image _ibg _video">
+											<img src="assets/img/v1.jpg" alt="image">
+										</figure>
+									</a>
+									<a class="videos-slider__slide videos-slider-slide" href="#">
+										<figure class="videos-slider-slide__image _ibg _video">
+											<img src="assets/img/v1.jpg" alt="image">
+										</figure>
+									</a>
+									<a class="videos-slider__slide videos-slider-slide" href="#">
+										<figure class="videos-slider-slide__image _ibg _video">
+											<img src="assets/img/v1.jpg" alt="image">
+										</figure>
+									</a>
+								</div>
+							</div>
+							<div class="main-videos__arrows">
+								<div class="main-videos__arrow main-videos__arrow_prev _icon-arrow"></div>
+								<div class="main-videos__arrow main-videos__arrow_next _icon-arrow"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="main-parthers">
+				<div class="main-parthers__container _container">
+					<div class="main-parthers__body">
+						<div class="main-parthers__row main-parthers__row_1">
+							<h3 class="main-parthers__title">Учредители</h3>
+							<div class="main-parthers__images">
+								<img src="assets/img/p1.svg" alt="image">
+								<img src="assets/img/p2.svg" alt="image">
+							</div>
+						</div>
+						<div class="main-parthers__row main-parthers__row_2">
+							<h3 class="main-parthers__title">Организатор</h3>
+							<div class="main-parthers__images">
+								<img src="assets/img/p3.svg" alt="image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container _container">
+				<div class="footer__body">
+					<div class="footer__column footer__column_1">
+						<span class="footer__info">ФГБУК РОСКОНЦЕРТ</span>
+					</div>
+					<div class="footer__column footer__column_2">
+						<span class="footer__info">101000, Москва, Архангельский переулок, дом 10 строение 2</span>
+					</div>
+					<div class="footer__column footer__column_3">
+						<span class="footer__info"><a class="footer__email" href="mailto:info@rachmaninoffcompetition.com">info@rachmaninoffcompetition.com</a></span>
+						<span class="footer__info">Тел.: <a class="footer__tel" href="tel:+74957486777">+7 (495) 748-6777</a></span>
+					</div>
+					<div class="footer__column footer__column_4">
+						<div class="footer__socials">
+							<a class="footer__social" href="#">
+								<img src="assets/img/vk.svg" alt="vk">
+							</a>
+							<a class="footer__social" href="#">
+								<img src="assets/img/tg.svg" alt="tg">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<button class="move-up _fixed-block" type="button" data-move-up data-goto="header"></button>
+
+
+	<!-- services -->
+	<script src="https://www.google.com/recaptcha/api.js?render=<reCAPTCHA_site_key>&badge=bottomleft"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>"></script>
+
+	<!-- libs -->
+	<script src="assets/js/libs/lazyload.min.js"></script>
+	<script src="assets/js/libs/choices.min.js"></script>
+	<script src="assets/js/libs/nouislider.min.js"></script>
+	<script src="assets/js/libs/inputmask.min.js"></script>
+	<script src="assets/js/libs/justvalidate.min.js"></script>
+	<script src="assets/js/libs/datepicker.min.js"></script>
+	<script src="assets/js/libs/swiper.min.js"></script>
+	<script src="assets/js/libs/lightgallery.min.js"></script>
+	<script src="assets/js/libs/aos.min.js"></script>
+
+	<!-- plugins -->
+	<script src="assets/js/plugins/adapt.js"></script>
+	<script src="assets/js/plugins/menu.js"></script>
+	<script src="assets/js/plugins/modal.js"></script>
+	<script src="assets/js/plugins/tabs.js"></script>
+	<script src="assets/js/plugins/spoiler.js"></script>
+	<script src="assets/js/plugins/rating.js"></script>
+
+	<!-- files -->
+	<script src="assets/js/files/functions.js"></script>
+	<script src="assets/js/files/forms.js"></script>
+	<script src="assets/js/files/sliders.js"></script>
+	<script src="assets/js/files/scroll.js"></script>
+	<script src="assets/js/files/media.js"></script>
+	<script src="assets/js/files/scripts.js"></script>
+
+</body>
+
+</html>

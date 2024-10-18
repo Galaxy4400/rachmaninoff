@@ -1,0 +1,26 @@
+.photos {
+	display: grid;
+	gap: rem(50);
+	@media (max-width: em($md2)) {
+		gap: rem(25);
+	}
+	// .photos__gallery
+	&__gallery {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: rem(30);
+		@media (max-width: em($md2)) {
+			gap: rem(15);
+		}
+		@media (max-width: em($md3)) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (max-width: em($md4)) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	// .photos__item
+	&__item {
+		padding: 0px 0px 70% 0px;
+	}
+}

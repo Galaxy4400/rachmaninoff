@@ -1,0 +1,73 @@
+.page-inner {
+	margin: 0px 0px rem(100) 0px;
+	// .page-inner__container
+	&__container {
+		@media (min-width: em($md1+1)) {
+			display: grid;
+			gap: rem(50) rem(30);
+		}
+	}
+	// .page-inner__head
+	&__head {
+		display: grid;
+		grid-template-columns: rem(62) 1fr;
+		gap: rem(50) rem(30);
+		@media (max-width: em($md1)) {
+			grid-template-columns: 1fr;
+			gap: rem(30);
+		}
+	}
+	// .page-inner__nav
+	&__nav {
+		display: flex;
+		flex-wrap: wrap;
+		gap: rem(30);
+		@media (min-width: em($md1+1)) {
+			grid-column: 2;
+		}
+		@media (max-width: em($md2)) {
+			gap: rem(15);
+		}
+	}
+	// .page-inner__body
+	&__body {
+		display: grid;
+		grid-template-columns: rem(62) 1fr;
+		gap: rem(50) rem(30);
+		@media (max-width: em($md1)) {
+			grid-template-columns: 1fr;
+			gap: rem(30);
+		}
+	}
+	// .page-inner__title
+	&__title {
+		@media (min-width: em($md1+1)) {
+			writing-mode: vertical-lr;
+			rotate: 180deg;
+			line-height: 0.8;
+			align-self: start;
+		}
+	}
+	
+	// .page-inner__link
+	&__link {
+	}
+	// .page-inner__main
+	&__main {
+	}
+}
+
+//===============================================================
+.authentication {
+	max-width: rem(400);
+	@media (min-width: em($md1+1)) {
+		padding: 0px 0px 0px rem(120);
+	}
+}
+
+//===============================================================
+.registration {
+	@media (min-width: em($md1+1)) {
+		padding: 0px 0px 0px rem(120);
+	}
+}

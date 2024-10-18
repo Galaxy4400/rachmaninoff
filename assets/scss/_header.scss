@@ -1,0 +1,118 @@
+.header {
+	padding: rem(63) 0 rem(43);
+	@media (max-width: em($md2)) {
+		padding: rem(30) 0 rem(30);
+	}
+	// .header__container
+	&__container {
+		display: grid;
+		gap: rem(30);
+	}
+	// .header__logo
+	&__logo {
+		position: relative;
+		z-index: 100;
+	}
+	// .header__body
+	&__body {
+		display: flex;
+		@include adaptiv-value(gap, 100, 10, 1);
+		justify-content: space-between;
+		@media (max-width: ($md2+'px')) {
+			align-items: center;
+		}
+	}
+	// .header__column
+	&__column {
+		// .header__column_left
+		&_left {
+			position: relative;
+			z-index: 100;
+		}
+		// .header__column_center
+		&_center {
+		}
+		// .header__column_right
+		&_right {
+			display: flex;
+			align-items: center;
+			gap: rem(20);
+		}
+	}
+}
+
+//===============================================================
+.menu {
+	// .menu__body
+	&__body {
+		@media (max-width: em($md2)) {
+			position: absolute;
+			z-index: 50;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			overflow-x: hidden;
+			overflow-y: auto;
+			background: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			opacity: 0;
+			visibility: hidden;
+			transition: opacity 0.3s, visibility 0.3s;
+			&._active {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+	// .menu__list
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: rem(15) rem(50);
+		@media (max-width: em($md0)) {
+			gap: rem(10) rem(50);
+		}
+		@media (max-width: em($md2)) {
+			gap: rem(25) rem(50);
+			display: grid;
+		}
+	}
+	// .menu__item
+	&__item {
+	}
+	// .menu__link
+	&__link {
+		text-transform: uppercase;
+		@media (max-width: em($md2)) {
+			font-size: rem(26);
+		}
+	}
+}
+
+//===============================================================
+.languages {
+	position: relative;
+	z-index: 100;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: rem(10);
+	// .languages__item
+	&__item {
+		letter-spacing: rem(-0.5);
+		text-transform: uppercase;
+		&._active {
+			font-weight: 800;
+		}
+	}
+}
+
+.account {
+	position: relative;
+	z-index: 100;
+	height: rem(55);
+	width: rem(55);
+}

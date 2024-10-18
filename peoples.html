@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Стартовая сборка</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script>
+		const LOCALIZATION = 'Russian'; // English, Spanish... Ключ локализации. При необходимости изменять в соответствии с ответом сервера.
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container _container">
+				<a class="header__logo" href="#" data-adapt="header__body,991,first">
+					<picture>
+						<source media="(max-width: 767px)" srcset="assets/img/logo3.svg">
+						<img src="assets/img/logo2.svg" alt="logo">
+					</picture>
+				</a>
+				<div class="header__body">
+					<div class="header__column header__column_left">
+						<div class="socials">
+							<a class="socials__social _icon-vk" href="#"></a>
+							<a class="socials__social _icon-tg" href="#"></a>
+							<a class="socials__social _icon-yt" href="#"></a>
+						</div>
+					</div>
+					<div class="header__column header__column_center" data-adapt="header,991">
+						<div class="menu" data-menu="main-menu">
+							<nav class="menu__body" data-menu-container="main-menu" data-fix>
+								<ul class="menu__list">
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Главная</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">О конкурсе</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Новости</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Расписание</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Лауреаты и участники</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Жюри</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Оркестры и солисты</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Фотогалерея</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="header__column header__column_right">
+						<div class="languages">
+							<a class="languages__item _active" href="#">ru</a>
+							<a class="languages__item" href="#">en</a>
+						</div>
+						<a class="account" href="#">
+							<img src="assets/img/user.svg" alt="user">
+						</a>
+						<button class="menu-icon" type="button" data-menu-icon="main-menu"></button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+
+			<div class="page-inner">
+				<div class="page-inner__container _container">
+					<div class="page-inner__head">
+						<nav class="page-inner__nav" data-adapt="page-inner__body,1200,2">
+							<a class="page-inner__link btn btn_w btn_narrow _active" href="#">2025</a>
+							<a class="page-inner__link btn btn_w btn_narrow" href="#">2022</a>
+							<a class="page-inner__link btn btn_w btn_narrow" href="#">2019</a>
+						</nav>
+					</div>
+					<div class="page-inner__body">
+						<h1 class="page-inner__title">Лауреаты и участники</h1>
+						<div class="page-inner__main">
+							<div class="peoples">
+								<nav class="categories-nav">
+									<a class="categories-nav__link btn btn_w _active" href="#">Фортепиано</a>
+									<a class="categories-nav__link btn btn_w" href="#">Композиция</a>
+									<a class="categories-nav__link btn btn_w" href="#">дирижирование</a>
+								</nav>
+								<div class="peoples__main">
+									<div class="peoples__item persone-card" data-modal-opener="persone-1">
+										<figure class="persone-card__photo _ibg">
+											<img src="https://ponominalu.ru/media/i/960x640/69-99-6999ea985e49fb470476b2c9c83d9d6e.jpeg" alt="photo">
+										</figure>
+										<div class="persone-card__contetn">
+											<h4 class="persone-card__title">Денис мацуев</h4>
+											<p class="persone-card__label">Какая-то премия</p>
+										</div>
+									</div>
+									<div class="peoples__item persone-card persone-card_disable" data-modal-opener="persone-2">
+										<figure class="persone-card__photo _ibg">
+											<img src="https://ponominalu.ru/media/i/960x640/69-99-6999ea985e49fb470476b2c9c83d9d6e.jpeg" alt="photo">
+										</figure>
+										<div class="persone-card__contetn">
+											<h4 class="persone-card__title">Денис мацуев</h4>
+											<p class="persone-card__label">Какая-то премия</p>
+										</div>
+									</div>
+									<div class="peoples__item persone-card persone-card_disable" data-modal-opener="persone-3">
+										<figure class="persone-card__photo _ibg">
+											<img src="https://ponominalu.ru/media/i/960x640/69-99-6999ea985e49fb470476b2c9c83d9d6e.jpeg" alt="photo">
+										</figure>
+										<div class="persone-card__contetn">
+											<h4 class="persone-card__title">Денис мацуев</h4>
+											<p class="persone-card__label">Какая-то премия</p>
+										</div>
+									</div>
+									<div class="peoples__item persone-card persone-card_disable" data-modal-opener="persone-4">
+										<figure class="persone-card__photo _ibg">
+											<img src="https://ponominalu.ru/media/i/960x640/69-99-6999ea985e49fb470476b2c9c83d9d6e.jpeg" alt="photo">
+										</figure>
+										<div class="persone-card__contetn">
+											<h4 class="persone-card__title">Денис мацуев</h4>
+											<p class="persone-card__label">Какая-то премия</p>
+										</div>
+									</div>
+									<div class="peoples__item persone-card persone-card_disable" data-modal-opener="persone-5">
+										<figure class="persone-card__photo _ibg">
+											<img src="https://ponominalu.ru/media/i/960x640/69-99-6999ea985e49fb470476b2c9c83d9d6e.jpeg" alt="photo">
+										</figure>
+										<div class="persone-card__contetn">
+											<h4 class="persone-card__title">Денис мацуев</h4>
+											<p class="persone-card__label">Какая-то премия</p>
+										</div>
+									</div>
+									<div class="peoples__item persone-card persone-card_disable" data-modal-opener="persone-6">
+										<figure class="persone-card__photo _ibg">
+											<img src="https://ponominalu.ru/media/i/960x640/69-99-6999ea985e49fb470476b2c9c83d9d6e.jpeg" alt="photo">
+										</figure>
+										<div class="persone-card__contetn">
+											<h4 class="persone-card__title">Денис мацуев</h4>
+											<p class="persone-card__label">Какая-то премия</p>
+										</div>
+									</div>
+									<div class="peoples__item persone-card persone-card_disable" data-modal-opener="persone-7">
+										<figure class="persone-card__photo _ibg">
+											<img src="https://ponominalu.ru/media/i/960x640/69-99-6999ea985e49fb470476b2c9c83d9d6e.jpeg" alt="photo">
+										</figure>
+										<div class="persone-card__contetn">
+											<h4 class="persone-card__title">Денис мацуев</h4>
+											<p class="persone-card__label">Какая-то премия</p>
+										</div>
+									</div>
+									<div class="peoples__item persone-card persone-card_disable" data-modal-opener="persone-8">
+										<figure class="persone-card__photo _ibg">
+											<img src="https://ponominalu.ru/media/i/960x640/69-99-6999ea985e49fb470476b2c9c83d9d6e.jpeg" alt="photo">
+										</figure>
+										<div class="persone-card__contetn">
+											<h4 class="persone-card__title">Денис мацуев</h4>
+											<p class="persone-card__label">Какая-то премия</p>
+										</div>
+									</div>
+									<div class="peoples__item persone-card persone-card_disable" data-modal-opener="persone-9">
+										<figure class="persone-card__photo _ibg">
+											<img src="https://ponominalu.ru/media/i/960x640/69-99-6999ea985e49fb470476b2c9c83d9d6e.jpeg" alt="photo">
+										</figure>
+										<div class="persone-card__contetn">
+											<h4 class="persone-card__title">Денис мацуев</h4>
+											<p class="persone-card__label">Какая-то премия</p>
+										</div>
+									</div>
+									<div class="peoples__item persone-card persone-card_disable" data-modal-opener="persone-10">
+										<figure class="persone-card__photo _ibg">
+											<img src="https://ponominalu.ru/media/i/960x640/69-99-6999ea985e49fb470476b2c9c83d9d6e.jpeg" alt="photo">
+										</figure>
+										<div class="persone-card__contetn">
+											<h4 class="persone-card__title">Денис мацуев</h4>
+											<p class="persone-card__label">Какая-то премия</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container _container">
+				<div class="footer__body">
+					<div class="footer__column footer__column_1">
+						<span class="footer__info">ФГБУК РОСКОНЦЕРТ</span>
+					</div>
+					<div class="footer__column footer__column_2">
+						<span class="footer__info">101000, Москва, Архангельский переулок, дом 10 строение 2</span>
+					</div>
+					<div class="footer__column footer__column_3">
+						<span class="footer__info"><a class="footer__email" href="mailto:info@rachmaninoffcompetition.com">info@rachmaninoffcompetition.com</a></span>
+						<span class="footer__info">Тел.: <a class="footer__tel" href="tel:+74957486777">+7 (495) 748-6777</a></span>
+					</div>
+					<div class="footer__column footer__column_4">
+						<div class="footer__socials">
+							<a class="footer__social" href="#">
+								<img src="assets/img/vk.svg" alt="vk">
+							</a>
+							<a class="footer__social" href="#">
+								<img src="assets/img/tg.svg" alt="tg">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<button class="move-up _fixed-block" type="button" data-move-up data-goto="header"></button>
+
+	<div id="modal">
+
+		<div data-modal="persone-1">
+			<div class="persone-info">
+				<div class="persone-info__body">
+					<div class="persone-info__column persone-info__column_right">
+						<figure class="persone-info__photo">
+							<img src="https://ponominalu.ru/media/i/960x640/69-99-6999ea985e49fb470476b2c9c83d9d6e.jpeg" alt="photo">
+						</figure>
+					</div>
+					<div class="persone-info__column persone-info__column_left">
+						<div class="persone-info__head">
+							<h3 class="persone-info__title">Александр Ключко</h3>
+							<p class="persone-info__country">Россия</p>
+						</div>
+						<div class="persone-info__content">
+							<p>Родился в 2000 г. в Саранске. Учился в Московском государственном колледже музыкального исполнительства им. Ф. Шопена, в Ecole Normale De Musique у Р. Шерешевской. Сейчас – студент Московской государственной консерватории им. П. И. Чайковского (класс проф. П. Нерсесьяна).</p>
+							<p>Лауреат международных конкурсов пианистов В. Крайнева (Москва, 2017 г), Astana Piano Passion (2017 г), Иль-де-Франс (Франция, 2018 г), Паломы О’Ши (Испания, 2018 г), Manhattan International Music Competition (Нью-Йорк, 2020 г), Jinji Lake (Суджоу, Китай, 2021 г).</p>
+							<p>Играл в Московской филармонии, Санкт-Петербургской Государственной Академической Капелле, Зале Альфреда Корто (Париж), Дворце Каталонской Музыки (Барселона). Участвовал в международных фестивалях «Звезды на Байкале» (Иркутск), «Музыкальный олимп» (Санкт-Петербург), Gradus Piano Festival (Дания).</p>
+							<p>Выступал с такими оркестрами, как Государственный академический симфонический оркестр России им. Е. Светланова, Национальный филармонический оркестр России, Испанский симфонический оркестр радио и телевидения и др.</p>
+						</div>
+						<div class="persone-info__tabs persone-tabs" data-tabs="persone-1">
+							<div class="persone-tabs__nav" data-tabs-controls>
+								<button class="persone-tabs__btn btn btn_w" type="button">Программа</button>
+								<button class="persone-tabs__btn btn btn_w" type="button">Видео с выступлений</button>
+							</div>
+							<div class="persone-tabs__content" data-tabs-container>
+								<div class="persone-tabs__panel">
+									<div class="persone-schedule" data-spoiler="schedule-1">
+										<div class="persone-schedule__item" data-spoiler-item data-spoiler-open>
+											<button class="persone-schedule__control" type="button" data-spoiler-control>
+												<span class="persone-schedule__control-title">I ТУР</span>
+												<span class="persone-schedule__control-arrow _icon-arrow-2">Развернуть</span>
+											</button>
+											<div class="persone-schedule__container" data-spoiler-container>
+												<ul class="persone-schedule__list">
+													<li>С. Рахманинов</li>
+													<li>Вариации на тему Корелли, соч. 42</li>
+													<li>Прелюдия ля-бемоль мажор, соч. 23 № 8</li>
+													<li>Прелюдия до минор, соч. 23 № 7</li>
+													<li>Прелюдия соль мажор, соч. 32 № 5</li>
+													<li>Прелюдия си-бемоль мажор, соч. 23 № 2</li>
+													<li>C. Прокофьев</li>
+													<li>Токката ре минор, соч. 11</li>
+													<li>Соната № 7 си-бемоль мажор, соч. 83</li>
+												</ul>
+											</div>
+										</div>
+										<div class="persone-schedule__item" data-spoiler-item>
+											<button class="persone-schedule__control" type="button" data-spoiler-control>
+												<span class="persone-schedule__control-title">II ТУР</span>
+												<span class="persone-schedule__control-arrow _icon-arrow-2">Развернуть</span>
+											</button>
+											<div class="persone-schedule__container" data-spoiler-container>
+												<ul class="persone-schedule__list">
+													<li>С. Рахманинов</li>
+													<li>Вариации на тему Корелли, соч. 42</li>
+													<li>Прелюдия ля-бемоль мажор, соч. 23 № 8</li>
+													<li>Прелюдия до минор, соч. 23 № 7</li>
+													<li>Прелюдия соль мажор, соч. 32 № 5</li>
+													<li>Прелюдия си-бемоль мажор, соч. 23 № 2</li>
+													<li>C. Прокофьев</li>
+													<li>Токката ре минор, соч. 11</li>
+													<li>Соната № 7 си-бемоль мажор, соч. 83</li>
+												</ul>
+											</div>
+										</div>
+										<div class="persone-schedule__item" data-spoiler-item>
+											<button class="persone-schedule__control" type="button" data-spoiler-control>
+												<span class="persone-schedule__control-title">III ТУР, 1 этап</span>
+												<span class="persone-schedule__control-arrow _icon-arrow-2">Развернуть</span>
+											</button>
+											<div class="persone-schedule__container" data-spoiler-container>
+												<ul class="persone-schedule__list">
+													<li>С. Рахманинов</li>
+													<li>Вариации на тему Корелли, соч. 42</li>
+													<li>Прелюдия ля-бемоль мажор, соч. 23 № 8</li>
+													<li>Прелюдия до минор, соч. 23 № 7</li>
+													<li>Прелюдия соль мажор, соч. 32 № 5</li>
+													<li>Прелюдия си-бемоль мажор, соч. 23 № 2</li>
+													<li>C. Прокофьев</li>
+													<li>Токката ре минор, соч. 11</li>
+													<li>Соната № 7 си-бемоль мажор, соч. 83</li>
+												</ul>
+											</div>
+										</div>
+										<div class="persone-schedule__item" data-spoiler-item>
+											<button class="persone-schedule__control" type="button" data-spoiler-control>
+												<span class="persone-schedule__control-title">III ТУР, 2 этап</span>
+												<span class="persone-schedule__control-arrow _icon-arrow-2">Развернуть</span>
+											</button>
+											<div class="persone-schedule__container" data-spoiler-container>
+												<ul class="persone-schedule__list">
+													<li>С. Рахманинов</li>
+													<li>Вариации на тему Корелли, соч. 42</li>
+													<li>Прелюдия ля-бемоль мажор, соч. 23 № 8</li>
+													<li>Прелюдия до минор, соч. 23 № 7</li>
+													<li>Прелюдия соль мажор, соч. 32 № 5</li>
+													<li>Прелюдия си-бемоль мажор, соч. 23 № 2</li>
+													<li>C. Прокофьев</li>
+													<li>Токката ре минор, соч. 11</li>
+													<li>Соната № 7 си-бемоль мажор, соч. 83</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="persone-tabs__panel">
+									<div class="persone-videos" data-spoiler="videos-1">
+										<div class="persone-videos__item" data-spoiler-item data-spoiler-open>
+											<button class="persone-videos__control" type="button" data-spoiler-control>
+												<span class="persone-videos__control-title">I ТУР</span>
+												<span class="persone-videos__control-arrow">Развернуть</span>
+											</button>
+											<div class="persone-videos__container" data-spoiler-container>
+												<div class="_video">
+													<img src="assets/img/video-plug.jpg" alt="video">
+												</div>
+											</div>
+										</div>
+										<div class="persone-videos__item" data-spoiler-item>
+											<button class="persone-videos__control" type="button" data-spoiler-control>
+												<span class="persone-videos__control-title">II ТУР</span>
+												<span class="persone-videos__control-arrow">Развернуть</span>
+											</button>
+											<div class="persone-videos__container" data-spoiler-container>
+												<div class="_video">
+													<img src="assets/img/video-plug.jpg" alt="video">
+												</div>
+											</div>
+										</div>
+										<div class="persone-videos__item" data-spoiler-item>
+											<button class="persone-videos__control" type="button" data-spoiler-control>
+												<span class="persone-videos__control-title">III ТУР, 1 этап</span>
+												<span class="persone-videos__control-arrow">Развернуть</span>
+											</button>
+											<div class="persone-videos__container" data-spoiler-container>
+												<div class="_video">
+													<img src="assets/img/video-plug.jpg" alt="video">
+												</div>
+											</div>
+										</div>
+										<div class="persone-videos__item" data-spoiler-item>
+											<button class="persone-videos__control" type="button" data-spoiler-control>
+												<span class="persone-videos__control-title">III ТУР, 2 этап</span>
+												<span class="persone-videos__control-arrow">Развернуть</span>
+											</button>
+											<div class="persone-videos__container" data-spoiler-container>
+												<div class="_video">
+													<img src="assets/img/video-plug.jpg" alt="video">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div data-modal="persone-2">
+			persone-2
+		</div>
+	
+		<div data-modal="persone-3">
+			persone-3
+		</div>
+	
+		<div data-modal="persone-4">
+			persone-4
+		</div>
+	
+		<div data-modal="persone-5">
+			persone-5
+		</div>
+	
+		<div data-modal="persone-6">
+			persone-6
+		</div>
+	
+		<div data-modal="persone-7">
+			persone-7
+		</div>
+	
+		<div data-modal="persone-8">
+			persone-8
+		</div>
+	
+		<div data-modal="persone-9">
+			persone-9
+		</div>
+	
+		<div data-modal="persone-10">
+			persone-10
+		</div>
+	
+	</div>
+
+
+	<!-- services -->
+	<script src="https://www.google.com/recaptcha/api.js?render=<reCAPTCHA_site_key>&badge=bottomleft"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>"></script>
+
+	<!-- libs -->
+	<script src="assets/js/libs/lazyload.min.js"></script>
+	<script src="assets/js/libs/choices.min.js"></script>
+	<script src="assets/js/libs/nouislider.min.js"></script>
+	<script src="assets/js/libs/inputmask.min.js"></script>
+	<script src="assets/js/libs/justvalidate.min.js"></script>
+	<script src="assets/js/libs/datepicker.min.js"></script>
+	<script src="assets/js/libs/swiper.min.js"></script>
+	<script src="assets/js/libs/lightgallery.min.js"></script>
+	<script src="assets/js/libs/aos.min.js"></script>
+
+	<!-- plugins -->
+	<script src="assets/js/plugins/adapt.js"></script>
+	<script src="assets/js/plugins/menu.js"></script>
+	<script src="assets/js/plugins/modal.js"></script>
+	<script src="assets/js/plugins/tabs.js"></script>
+	<script src="assets/js/plugins/spoiler.js"></script>
+	<script src="assets/js/plugins/rating.js"></script>
+
+	<!-- files -->
+	<script src="assets/js/files/functions.js"></script>
+	<script src="assets/js/files/forms.js"></script>
+	<script src="assets/js/files/sliders.js"></script>
+	<script src="assets/js/files/scroll.js"></script>
+	<script src="assets/js/files/media.js"></script>
+	<script src="assets/js/files/scripts.js"></script>
+
+</body>
+
+</html>

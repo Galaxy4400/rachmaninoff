@@ -1,0 +1,254 @@
+.peoples {
+	display: grid;
+	gap: rem(30);
+	// .peoples__main
+	&__main {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: rem(30);
+	}
+	// .peoples__item
+	&__item {
+	}
+}
+
+.persone-card {
+	cursor: pointer;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: rem(25);
+
+	// .persone-card__photo
+	&__photo {
+		width: rem(225);
+		height: rem(225);
+	}
+	// .persone-card__contetn
+	&__contetn {
+		display: grid;
+		gap: rem(10);
+		align-content: start;
+	}
+	// .persone-card__title
+	&__title {
+		text-transform: none;
+		font-weight: 700;
+	}
+	// .persone-card__label
+	&__label {
+	}
+	// .persone-card__info
+	&__info {
+	}
+
+	// .persone-card_disable
+	&_disable {
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background: rgba(255, 255, 255, 0.5);
+			pointer-events: none;
+			transition: all 0.5s ease 0s;
+		}
+
+		.persone-card__photo img {
+			transition: all 0.5s ease 0s;
+			filter: grayscale(100%);
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				.persone-card__photo img {
+					filter: grayscale(0%);
+				}
+
+				&::after {
+					background: transparent;
+				}
+			}
+		}
+
+	}
+
+}
+
+//===============================================================
+.persone-info {
+	// .persone-info__body
+	&__body {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		gap: rem(15);
+		@media (max-width: em($md2)) {
+			grid-template-columns: 1fr;
+		}
+	}
+	// .persone-info__column
+	&__column {
+		// .persone-info__column_right
+		&_right {
+		}
+		// .persone-info__column_left
+		&_left {
+		}
+	}
+	// .persone-info__photo
+	&__photo {
+		max-width: rem(256);
+	}
+	// .persone-info__head
+	&__head {
+		display: grid;
+		gap: rem(10);
+		margin: 0px 0px rem(20) 0px;
+	}
+	// .persone-info__title
+	&__title {
+		font-size: rem(19);
+		font-weight: 800;
+		line-height: 126.316%;
+		text-transform: uppercase;
+	}
+	// .persone-info__country
+	&__country {
+		font-size: rem(14);
+		font-weight: 300;
+	}
+	// .persone-info__content
+	&__content {
+		display: grid;
+		gap: rem(15);
+		margin: 0px 0px rem(30) 0px;
+		font-weight: 300;
+	}
+	// .persone-info__tabs
+	&__tabs {
+	}
+}
+
+//===============================================================
+.persone-tabs {
+	// .persone-tabs__nav
+	&__nav {
+		display: flex;
+		gap: rem(30);
+		margin: 0px 0px rem(15) 0px;
+		@media (max-width: em($md4)) {
+			gap: rem(10);
+			font-size: rem(14);
+		}
+	}
+	// .persone-tabs__btn
+	&__btn {
+		flex: 0 1 50%;
+		padding: rem(5) rem(10);
+	}
+	// .persone-tabs__content
+	&__content {
+	}
+	// .persone-tabs__panel
+	&__panel {
+	}
+}
+
+//===============================================================
+.persone-schedule {
+	& > *:not(:last-child) {
+		border-bottom: rem(1) solid #D9D9D9;
+	}
+	// .persone-schedule__item
+	&__item {
+	}
+	// .persone-schedule__control
+	&__control {
+		display: flex;
+		gap: rem(10);
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: rem(15) 0px;
+	}
+	// .persone-schedule__control-title
+	&__control-title {
+		color: #000;
+		font-size: rem(18);
+		font-weight: 800;
+	}
+	// .persone-schedule__control-arrow
+	&__control-arrow {
+		display: flex;
+		flex-direction: row-reverse;
+		font-weight: 300;
+		align-items: center;
+		gap: rem(15);
+		transition: all 0.2s ease 0s;
+		&::before {
+			font-size: rem(11);
+		}
+
+		.persone-schedule__control._active & {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+	// .persone-schedule__container
+	&__container {
+	}
+	// .persone-schedule__list
+	&__list {
+		font-weight: 300;
+		padding: 0px 0px rem(15) 0px;
+		display: grid;
+		gap: rem(5);
+	}
+}
+
+//===============================================================
+.persone-videos {
+	& > *:not(:last-child) {
+		border-bottom: rem(1) solid #D9D9D9;
+	}
+	// .persone-videos__item
+	&__item {
+	}
+	// .persone-videos__control
+	&__control {
+		display: flex;
+		gap: rem(10);
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: rem(15) 0px;
+	}
+	// .persone-videos__control-title
+	&__control-title {
+		color: #000;
+		font-size: rem(18);
+		font-weight: 800;
+	}
+	// .persone-videos__control-arrow
+	&__control-arrow {
+		display: flex;
+		flex-direction: row-reverse;
+		font-weight: 300;
+		align-items: center;
+		gap: rem(15);
+		transition: all 0.2s ease 0s;
+		&::before {
+			font-size: rem(11);
+		}
+
+		.persone-videos__control._active & {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+	// .persone-videos__container
+	&__container {
+	}
+}

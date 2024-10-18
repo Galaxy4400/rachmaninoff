@@ -1,0 +1,59 @@
+.footer {
+	padding: rem(50) rem(0) rem(117);
+	// .footer__container
+	&__container {
+	}
+	// .footer__body
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: rem(20) rem(50);
+	}
+	// .footer__column
+	&__column {
+		display: grid;
+		// .footer__column_1
+		&_1 {
+			@media (min-width: em($md3+1)) {
+				white-space: nowrap;
+			}
+		}
+		// .footer__column_2
+		&_2 {
+			@media (min-width: em($md3+1)) {
+				white-space: nowrap;
+			}
+		}
+		// .footer__column_3
+		&_3 {
+		}
+		// .footer__column_4
+		&_4 {
+		}
+	}
+	// .footer__info
+	&__info {
+		font-size: rem(14);
+		letter-spacing: rem(-0.5);
+		text-transform: uppercase;
+	}
+	// .footer__email
+	&__email {
+		letter-spacing: rem(-0.5);
+		text-transform: uppercase;
+	}
+	// .footer__tel
+	&__tel {
+	}
+	// .footer__socials
+	&__socials {
+		display: flex;
+		gap: rem(20);
+	}
+	// .footer__social
+	&__social {
+		width: rem(35);
+		height: rem(35);
+	}
+}

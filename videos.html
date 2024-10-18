@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Стартовая сборка</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script>
+		const LOCALIZATION = 'Russian'; // English, Spanish... Ключ локализации. При необходимости изменять в соответствии с ответом сервера.
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container _container">
+				<a class="header__logo" href="#" data-adapt="header__body,991,first">
+					<picture>
+						<source media="(max-width: 767px)" srcset="assets/img/logo3.svg">
+						<img src="assets/img/logo2.svg" alt="logo">
+					</picture>
+				</a>
+				<div class="header__body">
+					<div class="header__column header__column_left">
+						<div class="socials">
+							<a class="socials__social _icon-vk" href="#"></a>
+							<a class="socials__social _icon-tg" href="#"></a>
+							<a class="socials__social _icon-yt" href="#"></a>
+						</div>
+					</div>
+					<div class="header__column header__column_center" data-adapt="header,991">
+						<div class="menu" data-menu="main-menu">
+							<nav class="menu__body" data-menu-container="main-menu" data-fix>
+								<ul class="menu__list">
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Главная</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">О конкурсе</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Новости</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Расписание</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Лауреаты и участники</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Жюри</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Оркестры и солисты</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Фотогалерея</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="#">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="header__column header__column_right">
+						<div class="languages">
+							<a class="languages__item _active" href="#">ru</a>
+							<a class="languages__item" href="#">en</a>
+						</div>
+						<a class="account" href="#">
+							<img src="assets/img/user.svg" alt="user">
+						</a>
+						<button class="menu-icon" type="button" data-menu-icon="main-menu"></button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+
+			<div class="page-inner">
+				<div class="page-inner__container _container">
+					<div class="page-inner__head">
+						<nav class="page-inner__nav" data-adapt="page-inner__body,1200,2">
+							<a class="page-inner__link btn btn_w btn_narrow _active" href="#">2025</a>
+							<a class="page-inner__link btn btn_w btn_narrow" href="#">2022</a>
+							<a class="page-inner__link btn btn_w btn_narrow" href="#">2019</a>
+						</nav>
+					</div>
+					<div class="page-inner__body">
+						<h1 class="page-inner__title">Видео</h1>
+						<div class="page-inner__main">
+							<div class="videos">
+								<nav class="videos__nav">
+									<a class="videos__link btn btn_w _active" href="#">Фортепиано</a>
+									<a class="videos__link btn btn_w" href="#">Композиция</a>
+									<a class="videos__link btn btn_w" href="#">дирижирование</a>
+								</nav>
+								<div class="videos__main">
+									<a class="videos__video videos__video_main _ibg _video _play" href="#"><img src="assets/img/video-plug.jpg" alt="video"></a>
+									<a class="videos__video _ibg _video _play" href="#"><img src="assets/img/video-plug.jpg" alt="video"></a>
+									<a class="videos__video _ibg _video _play" href="#"><img src="assets/img/video-plug.jpg" alt="video"></a>
+									<a class="videos__video _ibg _video _play" href="#"><img src="assets/img/video-plug.jpg" alt="video"></a>
+									<a class="videos__video _ibg _video _play" href="#"><img src="assets/img/video-plug.jpg" alt="video"></a>
+									<a class="videos__video _ibg _video _play" href="#"><img src="assets/img/video-plug.jpg" alt="video"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container _container">
+				<div class="footer__body">
+					<div class="footer__column footer__column_1">
+						<span class="footer__info">ФГБУК РОСКОНЦЕРТ</span>
+					</div>
+					<div class="footer__column footer__column_2">
+						<span class="footer__info">101000, Москва, Архангельский переулок, дом 10 строение 2</span>
+					</div>
+					<div class="footer__column footer__column_3">
+						<span class="footer__info"><a class="footer__email" href="mailto:info@rachmaninoffcompetition.com">info@rachmaninoffcompetition.com</a></span>
+						<span class="footer__info">Тел.: <a class="footer__tel" href="tel:+74957486777">+7 (495) 748-6777</a></span>
+					</div>
+					<div class="footer__column footer__column_4">
+						<div class="footer__socials">
+							<a class="footer__social" href="#">
+								<img src="assets/img/vk.svg" alt="vk">
+							</a>
+							<a class="footer__social" href="#">
+								<img src="assets/img/tg.svg" alt="tg">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<button class="move-up _fixed-block" type="button" data-move-up data-goto="header"></button>
+
+
+	<!-- services -->
+	<script src="https://www.google.com/recaptcha/api.js?render=<reCAPTCHA_site_key>&badge=bottomleft"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>"></script>
+
+	<!-- libs -->
+	<script src="assets/js/libs/lazyload.min.js"></script>
+	<script src="assets/js/libs/choices.min.js"></script>
+	<script src="assets/js/libs/nouislider.min.js"></script>
+	<script src="assets/js/libs/inputmask.min.js"></script>
+	<script src="assets/js/libs/justvalidate.min.js"></script>
+	<script src="assets/js/libs/datepicker.min.js"></script>
+	<script src="assets/js/libs/swiper.min.js"></script>
+	<script src="assets/js/libs/lightgallery.min.js"></script>
+	<script src="assets/js/libs/aos.min.js"></script>
+
+	<!-- plugins -->
+	<script src="assets/js/plugins/adapt.js"></script>
+	<script src="assets/js/plugins/menu.js"></script>
+	<script src="assets/js/plugins/modal.js"></script>
+	<script src="assets/js/plugins/tabs.js"></script>
+	<script src="assets/js/plugins/spoiler.js"></script>
+	<script src="assets/js/plugins/rating.js"></script>
+
+	<!-- files -->
+	<script src="assets/js/files/functions.js"></script>
+	<script src="assets/js/files/forms.js"></script>
+	<script src="assets/js/files/sliders.js"></script>
+	<script src="assets/js/files/scroll.js"></script>
+	<script src="assets/js/files/media.js"></script>
+	<script src="assets/js/files/scripts.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+.user {
+	@media (min-width: em($md1+1)) {
+		padding: 0px 0px 0px rem(120);
+	}
+	.form {
+		.input {
+			max-width: rem(435);
+		}
+		.input-file {
+			max-width: rem(435);
+		}
+	}
+}
+
+
+.registed {
+	display: grid;
+	gap: rem(50);
+	justify-items: center;
+	text-align: center;
+	// .registed__title
+	&__title {
+	}
+	// .registed__message
+	&__message {
+		font-size: rem(22);
+		font-weight: 500;
+		line-height: normal;
+		text-transform: uppercase;
+		display: grid;
+		gap: rem(30);
+	}
+	// .registed__btn
+	&__btn {
+	}
+}
+
+
+
+.jury {
+	display: grid;
+	gap: rem(30);
+	@media (min-width: em($md3+1)) {
+		padding: 0px 0px 0px rem(30);
+	}
+	// .jury__title
+	&__title {
+	}
+	// .jury__label
+	&__label {
+		font-size: rem(19);
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+	// .jury__votes
+	&__votes {
+	}
+	// .jury__peoples
+	&__peoples {
+	}
+}
+
+.jury-votes {
+	min-width: 0;
+	// .jury-votes__title
+	&__title {
+		@include adaptiv-value(font-size, 22, 20, 1);
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+	// .jury-votes__table
+	&__table {
+		margin: 0 !important;
+	}
+}
+
+.jury-peoples {
+	min-width: 0;
+	// .jury-peoples__title
+	&__title {
+		@include adaptiv-value(font-size, 22, 20, 1);
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+	// .jury-peoples__tabel
+	&__tabel {
+		margin: 0 !important;
+		max-width: unset !important;
+	}
+}
+
+//===============================================================
+.participant-info {
+	// .participant-info__head
+	&__head {
+		display: grid;
+		gap: rem(5);
+		margin: 0px 0px rem(20) 0px;
+	}
+	// .participant-info__label
+	&__label {
+		font-size: rem(19);
+		font-weight: 800;
+		line-height: 126.316%;
+		letter-spacing: -0.5px;
+		text-transform: uppercase;
+	}
+	// .participant-info__title
+	&__title {
+	}
+	// .participant-info__common
+	&__common {
+		display: grid;
+		gap: rem(5);
+		font-size: rem(14);
+		font-weight: 300;
+		margin: 0px 0px rem(30) 0px;
+		span, a {
+			font-weight: 700;
+		}
+	}
+	// .participant-info__comment
+	&__comment {
+		display: grid;
+		gap: rem(5);
+		margin: 0px 0px rem(30) 0px;
+	}
+	// .participant-info__comment-label
+	&__comment-label {
+		font-size: rem(14);
+		font-weight: 300;
+	}
+	// .participant-info__comment-text
+	&__comment-text {
+		font-size: rem(16);
+		font-weight: 300;
+	}
+	// .participant-info__videos
+	&__videos {
+		display: grid;
+		gap: rem(20);
+		margin: 0px 0px rem(30) 0px;
+	}
+	// .participant-info__video-item
+	&__video-item {
+	}
+	// .participant-info__video-title
+	&__video-title {
+		font-size: rem(18);
+		font-weight: 800;
+		letter-spacing: -0.5px;
+		text-transform: uppercase;
+		margin: 0px 0px rem(15) 0px;
+	}
+	// .participant-info__form
+	&__form {
+		display: grid;
+		gap: rem(20);
+		justify-items: start;
+	}
+	// .participant-info__form-title
+	&__form-title {
+		font-size: rem(18);
+		font-weight: 800;
+		letter-spacing: -0.5px;
+		text-transform: uppercase;
+	}
+	// .participant-info__form-row
+	&__form-row {
+		display: grid;
+		gap: rem(10);
+	}
+	// .participant-info__form-btn
+	&__form-btn {
+	}
+}
