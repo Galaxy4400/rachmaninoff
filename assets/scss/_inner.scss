@@ -78,6 +78,11 @@
 	display: grid;
 	grid-template-columns: 3fr 2fr;
 	align-content: start;
+
+	a {
+		color: var(--color-main);
+	}
+
 	@media (max-width: em($md3)) {
 		grid-template-columns: 1fr;
 		gap: rem(50);

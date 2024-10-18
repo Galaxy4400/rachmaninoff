@@ -7686,6 +7686,9 @@ textarea.input {
   -ms-flex-line-pack: start;
       align-content: start;
 }
+.contacts a {
+  color: var(--color-main);
+}
 @media (max-width: 47.9375em) {
   .contacts {
     grid-template-columns: 1fr;
