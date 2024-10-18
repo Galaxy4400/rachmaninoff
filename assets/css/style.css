@@ -7680,6 +7680,73 @@ textarea.input {
   }
 }
 
+.contacts {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  -ms-flex-line-pack: start;
+      align-content: start;
+}
+@media (max-width: 47.9375em) {
+  .contacts {
+    grid-template-columns: 1fr;
+    gap: 3.125rem;
+  }
+}
+.contacts__column {
+  padding: 0px 3.125rem 1.25rem;
+  display: grid;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  gap: 1.875rem;
+}
+@media (max-width: 47.9375em) {
+  .contacts__column {
+    padding: 0;
+  }
+}
+@media (min-width: 48em) {
+  .contacts__column_left {
+    border-right: 0.125rem solid var(--color-main);
+  }
+}
+.contacts__list {
+  display: grid;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  gap: 1.875rem;
+}
+.contacts__item {
+  position: relative;
+  font-size: 1.125rem;
+}
+.contacts__item::before {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-block;
+  margin: 0px 0.9375rem 0px 0px;
+  translate: 0 0.3125rem;
+  position: absolute;
+  left: 0;
+  top: -0.1875rem;
+}
+.contacts__item_phone {
+  padding: 0px 0px 0px 2.5rem;
+}
+.contacts__item_phone::before {
+  content: url("../img/phone.svg");
+}
+.contacts__item_address {
+  padding: 0px 0px 0px 2.5rem;
+}
+.contacts__item_address::before {
+  content: url("../img/mark.svg");
+}
+.contacts__item_email {
+  padding: 0px 0px 0px 2.5rem;
+}
+.contacts__item_email::before {
+  content: url("../img/env.svg");
+}
 .news {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
