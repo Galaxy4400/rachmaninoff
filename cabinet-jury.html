@@ -67,44 +67,94 @@
 
 			<div class="page-inner">
 				<div class="page-inner__container _container">
-					<div class="page-inner__head">
-						<nav class="page-inner__nav" data-adapt="page-inner__body,1200,2">
-							<a class="page-inner__link btn btn_w btn_narrow _active" href="#">2025</a>
-							<a class="page-inner__link btn btn_w btn_narrow" href="#">2022</a>
-							<a class="page-inner__link btn btn_w btn_narrow" href="#">2019</a>
-						</nav>
-					</div>
 					<div class="page-inner__body">
-						<h1 class="page-inner__title">Фотогалерея</h1>
+						<h1 class="page-inner__title">личный кабинет</h1>
 						<div class="page-inner__main">
-							<div class="photos">
+							<div class="jury">
+								<h2 class="jury__title">Член Жюри: Денис мацуев</h2>
+								<p class="jury__label">Голосование завершается 6 июня 2026 г. в 12:00 МСК</p>
 								<nav class="categories-nav">
 									<a class="categories-nav__link btn btn_w _active" href="#">Фортепиано</a>
 									<a class="categories-nav__link btn btn_w" href="#">Композиция</a>
 									<a class="categories-nav__link btn btn_w" href="#">дирижирование</a>
 								</nav>
-								<div class="photos__gallery" data-gallery>
-									<a class="photos__item _ibg" href="assets/img/video-plug.jpg">
-										<img src="assets/img/video-plug.jpg" alt="img">
-									</a>
-									<a class="photos__item _ibg" href="assets/img/video-plug.jpg">
-										<img src="assets/img/video-plug.jpg" alt="img">
-									</a>
-									<a class="photos__item _ibg" href="assets/img/video-plug.jpg">
-										<img src="assets/img/video-plug.jpg" alt="img">
-									</a>
-									<a class="photos__item _ibg" href="assets/img/video-plug.jpg">
-										<img src="assets/img/video-plug.jpg" alt="img">
-									</a>
-									<a class="photos__item _ibg" href="assets/img/video-plug.jpg">
-										<img src="assets/img/video-plug.jpg" alt="img">
-									</a>
-									<a class="photos__item _ibg" href="assets/img/video-plug.jpg">
-										<img src="assets/img/video-plug.jpg" alt="img">
-									</a>
-									<a class="photos__item _ibg" href="assets/img/video-plug.jpg">
-										<img src="assets/img/video-plug.jpg" alt="img">
-									</a>
+								<div class="jury__votes jury-votes _special-styles">
+									<h3 class="jury-votes__title">Ваши голоса:</h3>
+									<div class="table-wrapper">
+										<table class="jury-votes__table">
+											<thead>
+												<tr>
+													<th>№</th>
+													<th>Имя участника</th>
+													<th>Страна</th>
+													<th>оценка</th>
+													<th>Дата голосования</th>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1234</td>
+													<td>Константинов Константин константинович</td>
+													<td>Великобритания</td>
+													<td class="success">Да</td>
+													<td>31.12.2024</td>
+													<td>оценка подтверждена</td>
+												</tr>
+												<tr>
+													<td>1234</td>
+													<td>Константинов Константин константинович</td>
+													<td>Великобритания</td>
+													<td class="error">Нет</td>
+													<td>31.12.2024</td>
+													<td>оценка подтверждена</td>
+												</tr>
+												<tr>
+													<td>1234</td>
+													<td>Константинов Константин константинович</td>
+													<td>Великобритания</td>
+													<td class="success">проходит без голосования</td>
+													<td>31.12.2024</td>
+													<td>оценка подтверждена</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="jury__peoples jury-peoples _special-styles">
+									<h3 class="jury-peoples__title">Участники без вашего голоса:</h3>
+									<div class="table-wrapper">
+										<table class="jury-peoples__tabel">
+											<thead>
+												<tr>
+													<th>№</th>
+													<th>Имя участника</th>
+													<th>Страна</th>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1234</td>
+													<td>Константинов Константин константинович</td>
+													<td>Великобритания</td>
+													<td><a data-modal-opener="persone-1">смотреть</a></td>
+												</tr>
+												<tr>
+													<td>1234</td>
+													<td>Константинов Константин константинович</td>
+													<td>Великобритания</td>
+													<td><a data-modal-opener="persone-2">смотреть</a></td>
+												</tr>
+												<tr>
+													<td>1234</td>
+													<td>Константинов Константин константинович</td>
+													<td>Великобритания</td>
+													<td><a data-modal-opener="persone-3">смотреть</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -143,6 +193,53 @@
 	</div>
 
 	<button class="move-up _fixed-block" type="button" data-move-up data-goto="header"></button>
+
+	<div id="modal">
+
+		<div data-modal="persone-1">
+			<div class="participant-info">
+				<div class="participant-info__head">
+					<p class="participant-info__label">голосование за участника</p>
+					<h2 class="participant-info__title">Александр ключко</h2>
+				</div>
+				<ul class="participant-info__common">
+					<li>Страна: <span>Россия</span></li>
+					<li>Направление: <span>Фортепиано</span></li>
+					<li>Биография: <a href="#">скачать</a></li>
+				</ul>
+				<div class="participant-info__comment">
+					<p class="participant-info__comment-label">Комментарии администратора:</p>
+					<p class="participant-info__comment-text">Пожалуйста, просмотрите видео конкурсанта и поставьте ему оценку под видео.</p>
+				</div>
+				<div class="participant-info__videos">
+					<div class="participant-info__video-item">
+						<h4 class="participant-info__video-title">Видео №1:</h4>
+						<div class="_video">
+							<img src="assets/img/video-plug.jpg" alt="video">
+						</div>
+					</div>
+				</div>
+				<form class="participant-info__form" name="vote" action="./" method="post" data-form data-validation data-autocomplete-off>
+					<h4 class="participant-info__form-title">Ваша оценка</h4>
+					<div class="participant-info__form-row">
+						<input type="radio" name="vote" value="1" data-radio checked data-label="Да (голосов осталось: -1)">
+						<input type="radio" name="vote" value="2" data-radio data-label="Нет">
+						<input type="radio" name="vote" value="3" data-radio data-label="Пока не уверен(а)">
+					</div>
+					<button class="participant-info__form-btn btn" type="submit">проголосовать</button>
+				</form>
+			</div>
+		</div>
+
+		<div data-modal="persone-2">
+			persone-2
+		</div>
+
+		<div data-modal="persone-3">
+			persone-3
+		</div>
+
+	</div>
 
 
 	<!-- services -->
