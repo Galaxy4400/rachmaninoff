@@ -40,3 +40,35 @@
 		}
 	}
 }
+
+//===============================================================
+.video-gallery {
+	display: grid;
+	gap: rem(30);
+	@media (min-width: em($md1+1)) {
+		padding: 0px 0px 0px rem(120);
+	}
+	@media (max-width: em($md3)) {
+		gap: rem(40);
+	}
+	// .video-gallery__item
+	&__item {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: rem(20);
+		@media (max-width: em($md3)) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	// .video-gallery__video
+	&__video {
+	}
+	// .video-gallery__figure
+	&__figure {
+	}
+	// .video-gallery__content
+	&__content {
+		font-size: rem(18);
+		line-height: 130%;
+	}
+}

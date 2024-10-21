@@ -243,9 +243,11 @@
 	// .main-videos__title
 	&__title {
 		justify-self: center;
-		color: var(--color-main);
 		font-weight: 900;
 		text-transform: uppercase;
+		a {
+			color: var(--color-main);
+		}
 	}
 	// .main-videos__wrapper
 	&__wrapper {

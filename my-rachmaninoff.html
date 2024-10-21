@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Стартовая сборка</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script>
+		const LOCALIZATION = 'Russian'; // English, Spanish... Ключ локализации. При необходимости изменять в соответствии с ответом сервера.
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container _container">
+				<a class="header__logo" href="index.html" data-adapt="header__body,991,first">
+					<picture>
+						<source media="(max-width: 767px)" srcset="assets/img/logo3.svg">
+						<img src="assets/img/logo2.svg" alt="logo">
+					</picture>
+				</a>
+				<div class="header__body">
+					<div class="header__column header__column_left">
+						<div class="socials">
+							<a class="socials__social _icon-vk" href="#"></a>
+							<a class="socials__social _icon-tg" href="#"></a>
+							<a class="socials__social _icon-yt" href="#"></a>
+						</div>
+					</div>
+					<div class="header__column header__column_center" data-adapt="header,991">
+						<div class="menu" data-menu="main-menu">
+							<nav class="menu__body" data-menu-container="main-menu" data-fix>
+								<ul class="menu__list">
+									<li class="menu__item" data-menu-item><a class="menu__link" href="index.html">Главная</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="about.html">О конкурсе</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="news.html">Новости</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="schedule.html">Расписание</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="peoples.html">Лауреаты и участники</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="jury.html">Жюри</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="peoples.html">Оркестры и солисты</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="gallery.html">Фотогалерея</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="contacts.html">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="header__column header__column_right">
+						<div class="languages">
+							<a class="languages__item _active" href="#">ru</a>
+							<a class="languages__item" href="#">en</a>
+						</div>
+						<a class="account" href="autentication.html">
+							<img src="assets/img/user.svg" alt="user">
+						</a>
+						<button class="menu-icon" type="button" data-menu-icon="main-menu"></button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+
+			<div class="page-inner">
+				<div class="page-inner__container _container">
+					<div class="page-inner__body">
+						<h1 class="page-inner__title">мой рахманинов</h1>
+						<div class="page-inner__main">
+							<div class="video-gallery">
+								<div class="video-gallery__item">
+									<a class="video-gallery__video" data-modal-opener="video-1">
+										<figure class="video-gallery__figure _ibg _video _play">
+											<img src="assets/img/v1.jpg" alt="image">
+										</figure>
+									</a>
+									<div class="video-gallery__content">
+										<p>"Музыка Сергея Рахманинова - это Россия. Когда ты ее слышишь, ты представляешь огромные просторы нашей страны, эту природу, эти леса. Это музыка с огромным вздохом". Художественный руководитель Конкурса им. С.В. Рахманинова, народный артист России, пианист Денис Мацуев по его собственному признанию мог бы часами говорить о Рахманинове. Мы расспросили его о музыке Сергея Васильевича и о Конкурсе его имени, который пройдет по инициативе Дениса Мацуева. Смотрите заключительное интервью проекта "Мой Рахманинов".</p>
+									</div>
+								</div>
+								<div class="video-gallery__item">
+									<a class="video-gallery__video" data-modal-opener="video-2">
+										<figure class="video-gallery__figure _ibg _video _play">
+											<img src="assets/img/v1.jpg" alt="image">
+										</figure>
+									</a>
+									<div class="video-gallery__content">
+										<p>"Музыка Сергея Рахманинова - это Россия. Когда ты ее слышишь, ты представляешь огромные просторы нашей страны, эту природу, эти леса. Это музыка с огромным вздохом". Художественный руководитель Конкурса им. С.В. Рахманинова, народный артист России, пианист Денис Мацуев по его собственному признанию мог бы часами говорить о Рахманинове. Мы расспросили его о музыке Сергея Васильевича и о Конкурсе его имени, который пройдет по инициативе Дениса Мацуева. Смотрите заключительное интервью проекта "Мой Рахманинов".</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container _container">
+				<div class="footer__body">
+					<div class="footer__column footer__column_1">
+						<span class="footer__info">ФГБУК РОСКОНЦЕРТ</span>
+					</div>
+					<div class="footer__column footer__column_2">
+						<span class="footer__info">101000, Москва, Архангельский переулок, дом 10 строение 2</span>
+					</div>
+					<div class="footer__column footer__column_3">
+						<span class="footer__info"><a class="footer__email" href="mailto:info@rachmaninoffcompetition.com">info@rachmaninoffcompetition.com</a></span>
+						<span class="footer__info">Тел.: <a class="footer__tel" href="tel:+74957486777">+7 (495) 748-6777</a></span>
+					</div>
+					<div class="footer__column footer__column_4">
+						<div class="footer__socials">
+							<a class="footer__social" href="https://vk.com/rachmaninoffcompetition" target="_blank">
+								<img src="assets/img/vk.svg" alt="vk">
+							</a>
+							<a class="footer__social" href="https://t.me/rachmaninoffcompetition" target="_blank">
+								<img src="assets/img/tg.svg" alt="tg">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<button class="move-up _fixed-block" type="button" data-move-up data-goto="header"></button>
+
+	<div id="modal">
+
+		<div data-modal="video-1">
+			<div class="_video">
+				<iframe src="https://vk.com/video_ext.php?oid=-211532974&id=456239191&hd=1" allow="encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+
+		<div data-modal="video-2">
+			<div class="_video">
+				<iframe src="https://vk.com/video_ext.php?oid=-211532974&id=456239191&hd=1" allow="encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- services -->
+	<script src="https://www.google.com/recaptcha/api.js?render=<reCAPTCHA_site_key>&badge=bottomleft"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>"></script>
+
+	<!-- libs -->
+	<script src="assets/js/libs/lazyload.min.js"></script>
+	<script src="assets/js/libs/choices.min.js"></script>
+	<script src="assets/js/libs/nouislider.min.js"></script>
+	<script src="assets/js/libs/inputmask.min.js"></script>
+	<script src="assets/js/libs/justvalidate.min.js"></script>
+	<script src="assets/js/libs/datepicker.min.js"></script>
+	<script src="assets/js/libs/swiper.min.js"></script>
+	<script src="assets/js/libs/lightgallery.min.js"></script>
+	<script src="assets/js/libs/aos.min.js"></script>
+
+	<!-- plugins -->
+	<script src="assets/js/plugins/adapt.js"></script>
+	<script src="assets/js/plugins/menu.js"></script>
+	<script src="assets/js/plugins/modal.js"></script>
+	<script src="assets/js/plugins/tabs.js"></script>
+	<script src="assets/js/plugins/spoiler.js"></script>
+	<script src="assets/js/plugins/rating.js"></script>
+
+	<!-- files -->
+	<script src="assets/js/files/functions.js"></script>
+	<script src="assets/js/files/forms.js"></script>
+	<script src="assets/js/files/sliders.js"></script>
+	<script src="assets/js/files/scroll.js"></script>
+	<script src="assets/js/files/media.js"></script>
+	<script src="assets/js/files/scripts.js"></script>
+
+</body>
+
+</html>
