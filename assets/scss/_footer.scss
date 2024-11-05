@@ -49,10 +49,14 @@
 	// .footer__socials
 	&__socials {
 		display: flex;
+		align-items: center;
 		gap: rem(20);
 	}
 	// .footer__social
 	&__social {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
 		width: rem(35);
 		height: rem(35);
 	}
