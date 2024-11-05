@@ -162,3 +162,30 @@
 	&__email {
 	}
 }
+
+
+//===============================================================
+.mentor {
+	// .mentor__title
+	&__title {
+	}
+	// .mentor__content
+	&__content {
+	}
+	// .mentor__image
+	&__image {
+		@media (min-width: em($md3+1)) {
+			min-height: rem(832);
+			min-width: rem(400);
+			float: left;
+			margin: rem(0) rem(30) rem(0) rem(0) !important;
+		}
+		@media (max-width: em($md3)) {
+			@include adaptiv-value(height, 1000, 300, 1);
+			width: 100%;
+			img {
+				object-position: top;
+			}
+		}
+	}
+}

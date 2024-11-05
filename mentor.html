@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Стартовая сборка</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script>
+		const LOCALIZATION = 'Russian'; // English, Spanish... Ключ локализации. При необходимости изменять в соответствии с ответом сервера.
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container _container">
+				<a class="header__logo" href="index.html" data-adapt="header__body,991,first">
+					<picture>
+						<source media="(max-width: 767px)" srcset="assets/img/logo3.svg">
+						<img src="assets/img/logo2.svg" alt="logo">
+					</picture>
+				</a>
+				<div class="header__body">
+					<div class="header__column header__column_left">
+						<div class="socials">
+							<a class="socials__social _icon-vk" href="#"></a>
+							<a class="socials__social _icon-tg" href="#"></a>
+							<a class="socials__social _icon-yt" href="#"></a>
+						</div>
+					</div>
+					<div class="header__column header__column_center" data-adapt="header,991">
+						<div class="menu" data-menu="main-menu">
+							<nav class="menu__body" data-menu-container="main-menu" data-fix>
+								<ul class="menu__list">
+									<li class="menu__item" data-menu-item><a class="menu__link" href="index.html">Главная</a></li>
+									<li class="menu__item" data-menu-item>
+										<a class="menu__link" data-menu-control>О конкурсе</a>
+										<div class="menu__sub-menu sub-menu" data-menu-submenu>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item" data-menu-item><a class="sub-menu__link" href="about.html">Положение о конкурсе</a></li>
+												<li class="sub-menu__item" data-menu-item><a class="sub-menu__link" href="mentor.html">Денис Мацуев</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="news.html">Новости</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="schedule.html">Расписание</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="peoples.html">Лауреаты и участники</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="jury.html">Жюри</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="peoples.html">Оркестры и солисты</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="gallery.html">Фотогалерея</a></li>
+									<li class="menu__item" data-menu-item><a class="menu__link" href="contacts.html">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="header__column header__column_right">
+						<div class="languages">
+							<a class="languages__item _active" href="#">ru</a>
+							<a class="languages__item" href="#">en</a>
+						</div>
+						<a class="account" href="autentication.html">
+							<img src="assets/img/user.svg" alt="user">
+						</a>
+						<button class="menu-icon" type="button" data-menu-icon="main-menu"></button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+
+			<div class="page-inner">
+				<div class="page-inner__container _container">
+					<div class="page-inner__main">
+						<div class="mentor _special-styles">
+							<h2 class="mentor__title">Художественный руководитель</h2>
+							<div class="mentor__content">
+								<figure class="mentor__image _ibg">
+									<img src="assets/img/mentor.jpg" alt="mentor">
+								</figure>
+								<p>Денис Мацуев зарекомендовал себя как один из самых выдающихся пианистов своего поколения со времён его триумфальной победы на XI Международном конкурсе имени П. И. Чайковского в Москве.</p>
+								<p>Выступления Мацуева в самых престижных концертных залах мира всегда пользуются неизменным успехом, и он регулярно выходит на сцену с такими всемирно известными оркестрами, как Чикагский, Питтсбургский, Лондонский симфонический оркестры, Нью-Йоркский, Филадельфийский и Лос-Анджелесский филармонический оркестры, Концертгебау, Берлинский, Венский филармонический оркестры, Симфонический оркестр Баварского радио, Лейпцигский оркестр Гевандхауса, симфонический оркестр BBC, оркестр Мариинского театра, Заслуженный коллектив Санкт-Петербургской филармонии, Российский национальный оркестр. Он работает с самыми выдающимися дирижерами мира, среди которых В. Гергиев, З. Мета, Ю. Темирканов, М. Янсонс, К. Тилеманн, К. Мазур, Л. Маазель, К. Нагано, Р. Шайи, А. Паппано, Дж. Нозеда, М. Плетнёв и многие другие.</p>
+								<p>Денис Мацуев — солист Московской филармонии с 1995 года. С 2004 года он представляет свой ежегодный персональный абонемент «Солист Денис Мацуев». В абонементе вместе с пианистом выступают ведущие оркестры России и зарубежья, при этом характерной особенностью цикла остается сохранение доступности концертов для абонементодержателей. В концертах абонемента последних сезонов приняли участие Симфонический оркестр Артуро Тосканини и Лорин Маазель, Симфонический оркестр Мариинского театра и Валерий Гергиев, флорентийский Maggio Musicale и Зубин Мета, Российский национальный оркестр под управлением Михаила Плетнева, Семен Бычков, Джанандреа Нозеда, Пааво Ярви, а также Владимир Спиваков как солист и дирижер Национального филармонического оркестра России.</p>
+								<p>Знаковым событием 2010 года для музыканта стало вручение одной из наиболее престижных мировых музыкальных наград – Премии им. Д.Д. Шостаковича. В соответствии с Указом Президента России в июне этого же года Денис Мацуев стал лауреатом Государственной премии Российской Федерации в области литературы и искусства, а в мае в 2011 г. пианисту было присвоено звание «Народный артист России». Денис Мацуев является Почетным профессором МГУ и послом доброй воли ЮНЕСКО.</p>
+								<p>Особая ответственность музыканта – Межрегиональный благотворительный фонд «Новые имена» им. И. Н. Вороновой, воспитанником, а в настоящее время Президентом которого он является. Фонд за свою историю воспитал несколько поколений артистов и под руководством Дениса Мацуева и основателя фонда Иветты Вороновой продолжает расширять свою просветительскую деятельность в области поддержки талантливых детей. В частности — в рамках Всероссийской программы «Новые имена – регионам России», которая ежегодно проходит более чем в 20 городах России. Также Мацуев является директором конкурсов для молодых пианистов Grand Piano Competition в Москве и Piano Passion в Астане.</p>
+								<p>В 2017 году Д. Мацуев был награжден орденом Почета и получил Премию Правительства РФ за международный музыкальный фестиваль «Звезды на Байкале».</p>
+								<p>Пианист выступил идейным вдохновителем и организатором гала-концерта с участием Валерия Гергиева, Анны Нетребко, Пласидо Доминго и других звёзд классического искусства на Красной площади 13 июня 2018 года в Москве в преддверии Чемпионата мира по футболу в России.</p>
+								<p>В 2019 году пианист был удостоен золотой медали им. Льва Николаева за существенный вклад в просвещение, популяризацию достижений науки и культуры. В этом же году Денис Мацуев стал председателем жюри в номинации «фортепиано» XVI Конкурса им. П. И. Чайковского.</p>
+								<p>В 2021 году впервые в истории ICMA российский музыкант стал лауреатом в номинации “Лучшая видеозапись”. Престижной награды удостоена рахманиновская программа в исполнении всемирно известного пианиста Дениса Мацуева и оркестра Люцернского фестиваля под управлением итальянского мэтра Риккардо Шайи.</p>
+								<p>В 2022 году под управлением художественного руководителя Дениса Мацуева состоялся I Международный конкурс пианистов, композиторов и дирижёров имени С. В. Рахманинова.</p>
+								<img src="assets/img/mentor2.jpg" alt="mentor">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container _container">
+				<div class="footer__body">
+					<div class="footer__column footer__column_1">
+						<span class="footer__info">ФГБУК РОСКОНЦЕРТ</span>
+					</div>
+					<div class="footer__column footer__column_2">
+						<span class="footer__info">101000, Москва, Архангельский переулок, дом 10 строение 2</span>
+					</div>
+					<div class="footer__column footer__column_3">
+						<span class="footer__info"><a class="footer__email" href="mailto:info@rachmaninoffcompetition.com">info@rachmaninoffcompetition.com</a></span>
+						<span class="footer__info">Тел.: <a class="footer__tel" href="tel:+74957486777">+7 (495) 748-6777</a></span>
+					</div>
+					<div class="footer__column footer__column_4">
+						<div class="footer__socials">
+							<a class="footer__social" href="https://vk.com/rachmaninoffcompetition" target="_blank">
+								<img src="assets/img/vk.svg" alt="vk">
+							</a>
+							<a class="footer__social" href="https://t.me/rachmaninoffcompetition" target="_blank">
+								<img src="assets/img/tg.svg" alt="tg">
+							</a>
+							<a class="footer__social" href="https://www.youtube.com/channel/UCrrYOZZIRxG3c02gOFkMKJQ" target="_blank">
+								<img src="assets/img/yt.svg" alt="yt">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<button class="move-up _fixed-block" type="button" data-move-up data-goto="header"></button>
+
+
+	<!-- services -->
+	<script src="https://www.google.com/recaptcha/api.js?render=<reCAPTCHA_site_key>&badge=bottomleft"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>"></script>
+
+	<!-- libs -->
+	<script src="assets/js/libs/lazyload.min.js"></script>
+	<script src="assets/js/libs/choices.min.js"></script>
+	<script src="assets/js/libs/nouislider.min.js"></script>
+	<script src="assets/js/libs/inputmask.min.js"></script>
+	<script src="assets/js/libs/justvalidate.min.js"></script>
+	<script src="assets/js/libs/datepicker.min.js"></script>
+	<script src="assets/js/libs/swiper.min.js"></script>
+	<script src="assets/js/libs/lightgallery.min.js"></script>
+	<script src="assets/js/libs/aos.min.js"></script>
+
+	<!-- plugins -->
+	<script src="assets/js/plugins/adapt.js"></script>
+	<script src="assets/js/plugins/menu.js"></script>
+	<script src="assets/js/plugins/modal.js"></script>
+	<script src="assets/js/plugins/tabs.js"></script>
+	<script src="assets/js/plugins/spoiler.js"></script>
+	<script src="assets/js/plugins/rating.js"></script>
+
+	<!-- files -->
+	<script src="assets/js/files/functions.js"></script>
+	<script src="assets/js/files/forms.js"></script>
+	<script src="assets/js/files/sliders.js"></script>
+	<script src="assets/js/files/scroll.js"></script>
+	<script src="assets/js/files/media.js"></script>
+	<script src="assets/js/files/scripts.js"></script>
+
+</body>
+
+</html>

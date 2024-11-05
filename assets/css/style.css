@@ -7801,6 +7801,32 @@ textarea.input {
 .contacts__item_email::before {
   content: url("../img/env.svg");
 }
+@media (min-width: 48em) {
+  .mentor__image {
+    min-height: 52rem;
+    min-width: 25rem;
+    float: left;
+    margin: 0rem 1.875rem 0rem 0rem !important;
+  }
+}
+@media (max-width: 47.9375em) {
+  .mentor__image {
+    height: 1000px;
+    width: 100%;
+  }
+}
+@media (max-width: 47.9375em) and (max-width: 1230px) {
+  .mentor__image {
+    height: calc(300px + 700 * (100vw - 320px) / 910);
+  }
+}
+@media (max-width: 47.9375em) {
+  .mentor__image img {
+    -o-object-position: top;
+       object-position: top;
+  }
+}
+
 .news {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
