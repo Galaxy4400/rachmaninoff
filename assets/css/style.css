@@ -7965,6 +7965,10 @@ textarea.input {
     gap: 2.5rem;
   }
 }
+.video-gallery__section {
+  display: grid;
+  gap: 1.875rem;
+}
 .video-gallery__item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

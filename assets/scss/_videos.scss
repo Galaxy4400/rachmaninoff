@@ -51,6 +51,14 @@
 	@media (max-width: em($md3)) {
 		gap: rem(40);
 	}
+	// .video-gallery__section
+	&__section {
+		display: grid;
+		gap: rem(30);
+	}
+	// .video-gallery__title
+	&__title {
+	}
 	// .video-gallery__item
 	&__item {
 		display: grid;
