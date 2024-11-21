@@ -8022,6 +8022,11 @@ textarea.input {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.875rem;
 }
+@media (max-width: 61.9375em) {
+  .peoples__main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .persone-card {
   cursor: pointer;
   display: grid;
