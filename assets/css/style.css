@@ -329,7 +329,7 @@ a[data-modal-opener] {
 }
 #modal [data-modal] iframe {
   width: 100%;
-  height: 100%;
+  height: 300px;
 }
 #modal [data-modal] > [data-close]:first-child {
   position: absolute;
