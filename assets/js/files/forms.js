@@ -11,6 +11,35 @@
 
 
 /**
+ * Добавляет глазик у поля пароля по атрибуту data-radio
+ */
+document.querySelectorAll('input[data-eye]').forEach(password => {
+
+	if (password.type != 'password') { console.error("The element should be input[type='password']"); return; }
+
+	const passwordContainer = document.createElement('div');
+	const passwordEye = document.createElement('span');
+
+	passwordContainer.classList.add('password');
+	passwordEye.classList.add('password__eye');
+
+	password.after(passwordContainer);
+	passwordContainer.prepend(password);
+
+	passwordContainer.append(passwordEye);
+
+	passwordEye.addEventListener('click', () => {
+		passwordEye.classList.toggle('_active');
+
+		if (passwordEye.classList.contains('_active')) {
+			password.type = 'text';
+		} else {
+			password.type = 'password';
+		}
+	})
+});
+
+/**
  * Инициализация input[type="radio"] по атрибуту data-radio
  * 
  * Выстраивает дополнительную обёртку для возможной кастомизации элемента.

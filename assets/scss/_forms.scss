@@ -131,6 +131,50 @@ textarea.input {
 	min-height: em(100);
 }
 
+//===============================================================
+/**
+ * Пароль с глазом
+ */
+.password {
+	position: relative;
+	width: 100%;
+	input {
+		background-image: none !important;
+	}
+	// .password__eye
+	&__eye {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: rem(11);
+		right: rem(12);
+		width: rem(30);
+		height: rem(30);
+		background: var(--color-body-background);
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--color-main-light);
+			}
+		}
+		&::before {
+			content: "\e900";
+			font-family: "icons-system";
+			@extend %ic;
+			font-size: rem(20);
+			color: var(--color-font);
+		}
+		&._active {
+			&::before {
+				content: "\e901";
+			}
+		}
+	}
+}
+
+
 
 //===============================================================
 /**
@@ -244,8 +288,7 @@ textarea.input {
 				width: em(20);
 				height: em(20);
 				background: #ffffff;
-				border: rem(1) solid #cccccc;
-				border-radius: rem(4);
+				border: rem(1) solid #000;
 				transition: all 0.3s ease 0s;
 			}
 			&::after {
@@ -549,6 +592,13 @@ textarea.input {
 		display: grid;
 		justify-items: start;
 		grid-gap: rem(16);
+		// .form__group_3
+		&_3 {
+			grid-template-columns: repeat(3, 1fr);
+			@media (max-width: em($md3)) {
+				grid-template-columns: repeat(1, 1fr);
+			}
+		}
 	}
 	// .form__label
 	&__label {
@@ -586,3 +636,27 @@ textarea.input {
 	}
 }
 
+//===============================================================
+.spec-radio {
+	display: block;
+	width: 100%;
+	// .spec-radio__appearance
+	&__appearance {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		font-size: rem(16);
+		font-weight: 500;
+		padding: em(10) em(12);
+		color: #000000;
+		background: #ffffff;
+		border: rem(1) solid #000;
+		transition: all 0.3s ease 0s;
+		.spec-radio._checked & {
+			border: rem(1) solid var(--color-main);
+			background: var(--color-main);
+			color: #fff;
+		}
+	}
+}

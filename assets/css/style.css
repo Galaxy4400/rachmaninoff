@@ -61,7 +61,7 @@
   font-style: normal;
   font-display: block;
 }
-._play::after, [class^=_icon-]:before,
+.password__eye::before, ._play::after, [class^=_icon-]:before,
 [class*=" _icon-"]:before, [class^=_system-icon]:before,
 [class*=" _system-icon"]:before {
   font-style: normal;
@@ -6428,6 +6428,51 @@ textarea.input {
 }
 
 /**
+ * Пароль с глазом
+ */
+.password {
+  position: relative;
+  width: 100%;
+}
+.password input {
+  background-image: none !important;
+}
+.password__eye {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0.6875rem;
+  right: 0.75rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  background: var(--color-body-background);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (any-hover: hover) {
+  .password__eye:hover {
+    color: var(--color-main-light);
+  }
+}
+.password__eye::before {
+  content: "\e900";
+  font-family: "icons-system";
+  font-size: 1.25rem;
+  color: var(--color-font);
+}
+.password__eye._active::before {
+  content: "\e901";
+}
+
+/**
  * Загрузка файлов
  */
 .input-file {
@@ -6557,8 +6602,7 @@ textarea.input {
   width: 1.25em;
   height: 1.25em;
   background: #ffffff;
-  border: 0.0625rem solid #cccccc;
-  border-radius: 0.25rem;
+  border: 0.0625rem solid #000;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
@@ -6820,6 +6864,14 @@ textarea.input {
   justify-items: start;
   grid-gap: 1rem;
 }
+.form__group_3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 47.9375em) {
+  .form__group_3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .form__label {
   display: grid;
   gap: 0.625rem;
@@ -6839,6 +6891,36 @@ textarea.input {
   font-style: italic;
   color: var(--color-error);
 }
+.spec-radio {
+  display: block;
+  width: 100%;
+}
+.spec-radio__appearance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.625em 0.75em;
+  color: #000000;
+  background: #ffffff;
+  border: 0.0625rem solid #000;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.spec-radio._checked .spec-radio__appearance {
+  border: 0.0625rem solid var(--color-main);
+  background: var(--color-main);
+  color: #fff;
+}
+
 /**
  * Стили галлерей
  */

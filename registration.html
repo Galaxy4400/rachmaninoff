@@ -81,13 +81,10 @@
 							<div class="registration">
 								<form class="form" name="reg" action="cabinet-jury.html" method="get" data-form data-validation data-autocomplete-off>
 									<div class="form__section">
+										<div class="form__row">
+											<h2 class="form__title">Регистрация</h2>
+										</div>
 										<div class="form__row form__row_3">
-											<div class="form__column">
-												<label class="form__label">
-													<span class="form__label-title">Ваша фамилия</span>
-													<input class="form__input input" type="text" name="surname" required>
-												</label>
-											</div>
 											<div class="form__column">
 												<label class="form__label">
 													<span class="form__label-title">Ваше имя</span>
@@ -96,13 +93,13 @@
 											</div>
 											<div class="form__column">
 												<label class="form__label">
-													<span class="form__label-title">Ваше отчество</span>
-													<input class="form__input input" type="text" name="patronymic" required>
+													<span class="form__label-title">Ваша фамилия</span>
+													<input class="form__input input" type="text" name="surname" required>
 												</label>
 											</div>
 											<div class="form__column">
 												<label class="form__label">
-													<span class="form__label-title">Пол</span>
+													<span class="form__label-title">Ваш пол</span>
 													<select class="form__input input" name="sex" required>
 														<option value="1">Мужчина</option>
 														<option value="2">Женщина</option>
@@ -111,29 +108,77 @@
 											</div>
 											<div class="form__column">
 												<label class="form__label">
-													<span class="form__label-title">Ваше отчество</span>
-													<input class="form__input input" type="text" name="birthday" data-mask="99.99.9999" data-mask-placeholder="дд.мм.гггг" required>
-												</label>
-											</div>
-											<div class="form__column">
-												<label class="form__label">
-													<span class="form__label-title">Страна</span>
+													<span class="form__label-title">Ваше гражданство</span>
 													<input class="form__input input" type="text" name="country" required>
 												</label>
 											</div>
 											<div class="form__column">
 												<label class="form__label">
-													<span class="form__label-title">Страна</span>
-													<input class="form__input input" type="tel" name="phone" required data-mask="+7 (999) 999-9999" data-mask-placeholder="_" data-mask-between="2">
+													<span class="form__label-title">Ваша дата рождения</span>
+													<input class="form__input input" type="text" name="birthday" data-mask="99.99.9999" data-mask-placeholder="dd.mm.yyyy">
 												</label>
 											</div>
+											<!-- <div class="form__column">
+												<label class="form__label">
+													<span class="form__label-title">Телефон</span>
+													<input class="form__input input" type="tel" name="phone" required data-mask="+7 (999) 999-9999" data-mask-placeholder="_" data-mask-between="2">
+												</label>
+											</div> -->
 											<div class="form__column">
 												<label class="form__label">
-													<span class="form__label-title">Страна</span>
+													<span class="form__label-title">Введите ваш e-mail</span>
 													<input class="form__input input" type="email" name="email" required>
 												</label>
 											</div>
 										</div>
+									</div>
+									<div class="form__section">
+										<div class="form__row">
+											<h2 class="form__title">Специализация</h2>
+										</div>
+										<div class="form__row">
+											<div class="form__group form__group_3" data-group>
+												<input class="spec-radio" type="radio" name="Radio" value="1" data-radio data-custom>
+												<span class="spec-radio__appearance" data-radio-custom>Фортепиано</span>
+											
+												<input class="spec-radio" type="radio" name="Radio" value="2" data-radio data-custom>
+												<span class="spec-radio__appearance" data-radio-custom>Дирижирование</span>
+											
+												<input class="spec-radio" type="radio" name="Radio" value="3" data-radio data-custom>
+												<span class="spec-radio__appearance" data-radio-custom>Композиция</span>
+											</div>
+										</div>
+									</div>
+									<div class="form__section">
+										<div class="form__row">
+											<h2 class="form__title">Регистрация</h2>
+										</div>
+										<div class="form__row form__row_3">
+											<div class="form__column">
+												Правила на пароль:<br>
+												- больше 8 символов<br>
+												- обязательно используйте цифры изаглавную букву
+											</div>
+											<div class="form__column">
+												<div class="form__column">
+													<label class="form__label">
+														<span class="form__label-title">Пароль</span>
+														<input class="form__input input" type="password" name="password" required data-repeat data-eye autocomplete="new-password">
+													</label>
+												</div>
+											</div>
+											<div class="form__column">
+												<div class="form__column">
+													<label class="form__label">
+														<span class="form__label-title">Подтвердите пароль</span>
+														<input class="form__input input" type="password" name="password2" required data-repeater data-eye autocomplete="new-password">
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form__section">
+										<input type="checkbox" name="agreement" value="1" data-check data-label="Согласен с <a href='#'>политикой обработки персональных данных</a>">
 									</div>
 									<div class="form__section">
 										<div class="form__row">
