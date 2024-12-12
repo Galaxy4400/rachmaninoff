@@ -189,3 +189,55 @@
 		}
 	}
 }
+
+//===============================================================
+.orchestra {
+	display: grid;
+	gap: rem(30);
+	@media (min-width: em($md1+1)) {
+		padding: 0px 0px 0px rem(120);
+	}
+	@media (max-width: em($md3)) {
+		gap: rem(40);
+	}
+	// .orchestra__section
+	&__section {
+		display: grid;
+		gap: rem(30);
+		padding-bottom: rem(30);
+		border-bottom: rem(1) solid #ccc;
+	}
+	// .orchestra__title
+	&__title {
+	}
+	// .orchestra__item
+	&__item {
+	}
+}
+
+.orchestra-item {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: rem(20);
+	@media (max-width: em($md3)) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	// .orchestra-item__figure
+	&__figure {
+	}
+	// .orchestra-item__content
+	&__content {
+		font-size: rem(18);
+		line-height: 130%;
+	}
+	// .orchestra-item__title
+	&__title {
+		font-weight: 700;
+		@include adaptiv-value(font-size, 26, 20, 1);
+		text-transform: none;
+		margin: 0px 0px rem(15) 0px;
+	}
+	// .orchestra-item__text
+	&__text {
+	}
+}

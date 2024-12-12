@@ -7827,6 +7827,51 @@ textarea.input {
   }
 }
 
+.orchestra {
+  display: grid;
+  gap: 1.875rem;
+}
+@media (min-width: 75.0625em) {
+  .orchestra {
+    padding: 0px 0px 0px 7.5rem;
+  }
+}
+@media (max-width: 47.9375em) {
+  .orchestra {
+    gap: 2.5rem;
+  }
+}
+.orchestra__section {
+  display: grid;
+  gap: 1.875rem;
+  padding-bottom: 1.875rem;
+  border-bottom: 0.0625rem solid #ccc;
+}
+.orchestra-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+@media (max-width: 47.9375em) {
+  .orchestra-item {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.orchestra-item__content {
+  font-size: 1.125rem;
+  line-height: 130%;
+}
+.orchestra-item__title {
+  font-weight: 700;
+  font-size: 26px;
+  text-transform: none;
+  margin: 0px 0px 0.9375rem 0px;
+}
+@media (max-width: 1230px) {
+  .orchestra-item__title {
+    font-size: calc(20px + 6 * (100vw - 320px) / 910);
+  }
+}
 .news {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -8035,7 +8080,12 @@ textarea.input {
   cursor: pointer;
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 1.5625rem;
+  gap: 0.9375rem 1.5625rem;
+}
+@media (max-width: 29.9375em) {
+  .persone-card {
+    grid-template-columns: 1fr;
+  }
 }
 .persone-card__photo {
   width: 14.0625rem;

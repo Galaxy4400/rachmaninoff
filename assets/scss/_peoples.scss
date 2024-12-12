@@ -19,8 +19,10 @@
 	cursor: pointer;
 	display: grid;
 	grid-template-columns: auto 1fr;
-	gap: rem(25);
-
+	gap: rem(15) rem(25);
+	@media (max-width: em($md4)) {
+		grid-template-columns: 1fr;
+	}
 	// .persone-card__photo
 	&__photo {
 		width: rem(225);
