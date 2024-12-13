@@ -81,6 +81,23 @@
 	}
 }
 
+//===============================================================
+.persone-videos-block {
+	display: grid;
+	gap: rem(30);
+	// .persone-videos-block__item
+	&__item {
+	}
+	// .persone-videos-block__video
+	&__video {
+		margin: 0px 0px rem(10) 0px;
+	}
+	// .persone-videos-block__title
+	&__title {
+	}
+}
+
+
 
 //===============================================================
 [data-video] {

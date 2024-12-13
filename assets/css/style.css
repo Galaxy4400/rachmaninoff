@@ -8111,6 +8111,13 @@ textarea.input {
   line-height: 130%;
 }
 
+.persone-videos-block {
+  display: grid;
+  gap: 1.875rem;
+}
+.persone-videos-block__video {
+  margin: 0px 0px 0.625rem 0px;
+}
 [data-video] {
   position: relative;
   cursor: pointer;
