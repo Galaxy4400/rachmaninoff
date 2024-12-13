@@ -101,3 +101,15 @@ document.querySelectorAll('[data-iframe][data-src]').forEach(frameMedia => {
 	});
 });
 
+
+
+
+//===============================================================
+document.querySelectorAll('[data-video]').forEach(video => {
+	const frame = video.querySelector('iframe');
+
+	video.addEventListener('click', () => {
+		video.classList.add('_active');
+		frame.src = frame.dataset.src;
+	});
+});

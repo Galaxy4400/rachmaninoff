@@ -320,17 +320,17 @@ document.querySelectorAll('[data-dynamic-loader]').forEach(dynamicLoader => {
 //===============================================================
 
 
-const observer = new IntersectionObserver((entries) => {
-	entries.forEach(entry => {
-		if (entry.isIntersecting) {
-			let frame = entry.target;
-			frame.src = frame.dataset.src;
-		}
-	});
-});
+// const observer = new IntersectionObserver((entries) => {
+// 	entries.forEach(entry => {
+// 		if (entry.isIntersecting) {
+// 			let frame = entry.target;
+// 			frame.src = frame.dataset.src;
+// 		}
+// 	});
+// });
 
-const videoFrames = document.querySelectorAll('iframe[data-src]');
+// const videoFrames = document.querySelectorAll('iframe[data-src]');
 
-videoFrames.forEach(frame => {
-	observer.observe(frame);
-});
+// videoFrames.forEach(frame => {
+// 	observer.observe(frame);
+// });
